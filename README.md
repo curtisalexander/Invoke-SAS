@@ -1,2 +1,3 @@
 # Invoke-SAS
-Run a SAS program
+
+Run a SAS program from PowerShell.
