@@ -300,7 +300,8 @@ $stopWatch = [System.Diagnostics.Stopwatch]::StartNew()
 do {
     $totalSecs = [Math]::Round($stopWatch.Elapsed.TotalSeconds, 0)
 
-    Write-Host "...running ${sasCodeFile} for ${totalSecs} seconds" -ForegroundColor Gray
+    $randomColor = Get-Random -InputObject ([Enum]::GetValues([System.ConsoleColor]))
+    Write-Host "...running ${sasCodeFile} for ${totalSecs} seconds" -ForegroundColor $randomColor
 
     $job | Wait-Job -Timeout $reportEverySecs | Receive-Job
 } while (@("Completed", "Failed") -notcontains $job.State)
