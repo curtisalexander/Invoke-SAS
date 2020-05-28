@@ -115,7 +115,7 @@ Param(
     [Parameter(Mandatory = $true, HelpMessage = "The path to the directory to save the resulting SAS log and listing files")]
     [Alias("out")]
     [System.IO.FileInfo]$outDirPath,
-    [Parameter(Mandatory = $false, HelpMessage = "The time in secons to provide feedback to the console as to whether the SAS program is continuing to run (default is 60 seconds)")]
+    [Parameter(Mandatory = $false, HelpMessage = "The time in seconds to provide feedback to the console as to whether the SAS program is continuing to run (default is 60 seconds)")]
     [Alias("secs")]
     [int]$reportEverySecs = 60
 )
