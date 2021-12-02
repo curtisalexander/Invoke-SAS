@@ -34,7 +34,7 @@ The path to the SAS code to be run
 The path to the directory to save the resulting SAS log and listing files
 
 .PARAMETER reportEverySecs
-The time in secons to provide feedback to the console as to whether the SAS program is continuing to run (default is 60 seconds)
+The time in seconds to provide feedback to the console as to whether the SAS program is continuing to run (default is 60 seconds)
 
 .EXAMPLE
 Invoke-SAS -userName myusername -pwPath "C:\path\to\mypwd.txt" -sasCodePath "C:\path\to\sasprogram.sas" -outDirPat "C:\path\to\out" -reportEverySecs 30
