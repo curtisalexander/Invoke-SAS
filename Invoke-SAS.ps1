@@ -124,7 +124,6 @@ $sasCodeFile = Split-Path $sasCodePath -Leaf
 
 $dt = (Get-Date).ToString("yyyyMMddHHmmss")
 $logPath = Join-Path $outDirPath "${sasCodeFile}__${dt}.log"
-$logPath = Join-Path $outDirPath "${sasCodeFile}__${dt}.log"
 $lstPath = Join-Path $outDirPath "${sasCodeFile}__${dt}.lst"
 
 # Record all output from PowerShell
