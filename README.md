@@ -10,6 +10,13 @@ The provided SAS program is submitted to a remote server.  After the program com
 The intended behavior is akin to submitting a SAS program from the command line in a Linux environment.
 
 ## Usage
+Example usage.
+
+```powershell
+Invoke-SAS -userName myusername -pwPath "C:\path\to\mypwd.txt" -sasCodePath "C:\path\to\sasprogram.sas" -outDirPath "C:\path\to\out" -reportEverySecs 30
+```
+
+## Authentication
 In order for a SAS program to be submitted, the user needs to authenticate with SAS.  This is accomplished by passing the username and a password file location to the function.  In order to create the needed password file, the following can be run from a PowerShell prompt.
 
 ```powershell
